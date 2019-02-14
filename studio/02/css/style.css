@@ -15,7 +15,7 @@ src: url("../assets/avenir.otf") format("opentype");
 .bodytext{
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 500px 500px 500px;
+    grid-template-rows: 500px 500px 500px 500px 500px 500px;
     margin: 100px;
 }
 /* div:nth-child(even){
@@ -32,15 +32,13 @@ body{
     grid-column-start: 1;
     grid-column-end: 5;
     position: absolute;
-    top: 50%;
     left: 50%;
-    margin-top: -100px;
+    margin-top: 0px;
     margin-left: -190px;
 }
 h1{
     font-size: 8em;
     margin: 0px;
-    display: flex;
     justify-content: center;
     margin-block-end: -0.26em;
 }
@@ -73,17 +71,9 @@ h4{
 }
 #firstcontainer{
     width: 100vw;
-    height: 100vh;
-}
+    height: 200px;
+    
 
-#popup{
-    display:none;
-}
-.steps-1:hover #popup{
-    position:absolute;
-    display:block;
-    margin-left: 750px;
-    margin-top: -90px;
 }
  /*mobile layout*/
  @media not all and (hover), (max-width: 700px) {
@@ -99,7 +89,7 @@ h4{
         text-align: left;
     }
     .steps-2{
-        margin-top: 10px;
+        margin-top: 0px;
         grid-column-start: 2;
         grid-column-end: 5;
  }
@@ -133,7 +123,7 @@ h4{
 	
 	left: -5%;
 	top: 5%;
-	
+	position: fixed;
 	transform: scale(0.6);
 }
 
@@ -141,7 +131,8 @@ h4{
 	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
 	
 	left: 5%;
-	top: 80%;
+    top: 80%;
+    position: fixed;
 	transform: scale(0.4);
 }
 
@@ -150,7 +141,7 @@ h4{
 	
 	left: 10%;
 	top: 40%;
-	
+	position: fixed;
 	transform: scale(0.7);
 }
 
@@ -159,7 +150,8 @@ h4{
 	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
 	
 	left: 20%;
-	top: 0;
+    top: 0;
+    position: fixed;
 	transform: scale(0.3);
 }
 
@@ -168,7 +160,7 @@ h4{
 	
 	left: 30%;
 	top: 50%;
-	
+	position: fixed;
 	transform: scale(0.5);
 }
 
@@ -176,14 +168,16 @@ h4{
 
 	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
 	left: 50%;
-	top: 0;
+    top: 0;
+    position: fixed;
 	transform: scale(0.8);
 }
 
 .x7 {
 	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
 	left: 65%;
-	top: 70%;
+    top: 70%;
+    position: fixed;
 	transform: scale(0.4);
 }
 
@@ -192,21 +186,24 @@ h4{
 	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
 	
 	left: 80%;
-	top: 10%;
+    top: 10%;
+    position: fixed;
 	transform: scale(0.3);
 }
 
 .x9 {
 	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	left: 20vw;
-	top: 50vh;
+	left: 90%;
+    top: 40%;
+    position: fixed;
 	transform: scale(0.6);
 }
 
 .x10 {
 	animation: animateBubble 26s linear infinite, sideWays 2s, ease-in-out, infinite, alternate;	
 	left: 80%;
-	margin-top: 30vh;
+    margin-top: 80%;
+    position: fixed;
 	transform: scale(0.3);
 }
 
