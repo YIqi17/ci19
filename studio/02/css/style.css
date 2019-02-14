@@ -1,0 +1,212 @@
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Akzidenz";
+    src: url("../assets/akzidenz.otf") format("opentype");
+}
+
+@font-face {
+font-family: "Avenir";
+src: url("../assets/avenir.otf") format("opentype");
+}
+
+.bodytext{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 500px 500px 500px;
+    margin: 100px;
+}
+/* div:nth-child(even){
+    background-color: antiquewhite;
+} */
+*{
+    background-color: rgb(61, 63, 192);
+    color:white;
+}
+body{
+    font-family: "Akzidenz";
+}
+#title{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+}
+h1{
+    font-size: 8em;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    margin-block-end: -0.26em;
+}
+h2{
+    font-size: 2em;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+}
+.steps-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: right;
+}
+.steps-2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    margin-top: 230px;
+    grid-template-columns: 50% 50%;
+}
+h3{
+    font-size: 3em;
+    transition: color 2s ease-in-out;
+}
+h4{
+    font-family: "Avenir";
+    grid-column-start: 1;
+    grid-column-end: 2;
+    transition: color 2s ease-in-out;
+}
+#firstcontainer{
+    width: 100vw;
+    height: 100vh;
+}
+
+#popup{
+    display:none;
+}
+.steps-1:hover #popup{
+    position:absolute;
+    display:block;
+    margin-left: 750px;
+    margin-top: -90px;
+}
+ /*mobile layout*/
+ @media not all and (hover), (max-width: 700px) {
+     h3{
+         font-size: 2.5em;
+     }
+     h4{
+         font-size: 0.7em;
+     }
+    .steps-1{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: left;
+    }
+    .steps-2{
+        margin-top: 10px;
+        grid-column-start: 2;
+        grid-column-end: 5;
+ }
+ }
+
+
+/* KEYFRAMES */
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -100%;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+/* ANIMATIONS */
+
+.x1 {
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: -5%;
+	top: 5%;
+	
+	transform: scale(0.6);
+}
+
+.x2 {
+	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 5%;
+	top: 80%;
+	transform: scale(0.4);
+}
+
+.x3 {
+	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	
+	left: 10%;
+	top: 40%;
+	
+	transform: scale(0.7);
+}
+
+.x4 {
+
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 20%;
+	top: 0;
+	transform: scale(0.3);
+}
+
+.x5 {
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	
+	left: 30%;
+	top: 50%;
+	
+	transform: scale(0.5);
+}
+
+.x6 {
+
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 50%;
+	top: 0;
+	transform: scale(0.8);
+}
+
+.x7 {
+	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 65%;
+	top: 70%;
+	transform: scale(0.4);
+}
+
+.x8 {
+
+	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	
+	left: 80%;
+	top: 10%;
+	transform: scale(0.3);
+}
+
+.x9 {
+	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
+	left: 20vw;
+	top: 50vh;
+	transform: scale(0.6);
+}
+
+.x10 {
+	animation: animateBubble 26s linear infinite, sideWays 2s, ease-in-out, infinite, alternate;	
+	left: 80%;
+	margin-top: 30vh;
+	transform: scale(0.3);
+}
+
