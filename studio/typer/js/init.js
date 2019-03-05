@@ -87,7 +87,7 @@ function createElement(k) {
     if (k == "5") {
         helpers.removeClass('animated');
         $(".svg").css("filter", "hue-rotate(310deg) saturate(4)");
-        $("#cursor").css("filter", "hue-rotate(240deg) saturate(4)");
+        $("#cursor").css("filter", "hue-rotate(310deg) saturate(4)");
         $("body").css("background-color", "#D800FF");
     }
     if (k == "6") {

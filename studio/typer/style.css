@@ -23,8 +23,8 @@ body {
     display:inline-block;
   }
 embed{
-  width:60px;
-  height:90px;
+  width:100px;
+  height:150px;
 }
 /* .svg {
   filter: invert(.8) sepia(1) saturate(5) hue-rotate(175deg);
@@ -36,7 +36,7 @@ span{
 #text{
   color: lime;
   font-family: 'VT323', monospace;
-  font-size: 30px;
+  font-size: 60px;
 }
 .animated{
 animation: colorchange 10s infinite;
