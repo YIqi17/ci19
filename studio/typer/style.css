@@ -1,0 +1,79 @@
+
+#cursor {
+    animation: blinker 1s step-end infinite; 
+    /*you can change 'step-end' to 'linear' for smooth transition*/
+  }
+  @keyframes blinker {  
+    50% { opacity: 0; }
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+body {
+        line-height: -3em;
+        background-color: #000000;
+}
+
+#container {
+    background-color: transparent;
+    width: 100vw;
+    font-size:0;
+    text-align:left;
+  }
+  .inner {
+    display:inline-block;
+  }
+embed{
+  width:60px;
+  height:90px;
+}
+/* .svg {
+  filter: invert(.8) sepia(1) saturate(5) hue-rotate(175deg);
+} */
+span{
+  margin:0px;
+  padding:0px;
+}
+#text{
+  color: lime;
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+}
+.animated{
+animation: colorchange 10s infinite;
+}
+
+.changefilter{
+  animation: filterchange 10s infinite;
+  }
+
+@keyframes colorchange
+
+{
+
+  0%   {background: rgb(255, 0, 43);}
+
+  25%  {background: rgb(255, 251, 0);}
+
+  50%  {background: rgb(0, 255, 0);}
+
+  75%  {background: rgb(0, 174, 255);}
+
+  100% {background: rgb(183, 0, 255);}
+
+}
+
+@keyframes filterchange
+
+{
+
+  0%   {filter: hue-rotate(0);}
+
+  25%  {filter: hue-rotate(90);}
+
+  50%  {filter: hue-rotate(135);}
+
+  75%  {filter: hue-rotate(180);}
+
+  100% {filter: hue-rotate(270);}
+
+}
