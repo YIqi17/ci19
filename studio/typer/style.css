@@ -11,18 +11,20 @@
 body {
         line-height: -3em;
         background-color: #000000;
+        margin: 0px;
 }
 
 #container {
     background-color: transparent;
     width: 100vw;
     font-size:0;
-    text-align:left;
+    text-align:center;
   }
   .inner {
     display:inline-block;
   }
-embed{
+
+embed,img,svg{
   width:100px;
   height:150px;
 }
@@ -37,14 +39,15 @@ span{
   color: lime;
   font-family: 'VT323', monospace;
   font-size: 60px;
+  text-align:center;
 }
 .animated{
 animation: colorchange 10s infinite;
 }
 
-.changefilter{
+#changefilter{
   animation: filterchange 10s infinite;
-  }
+}
 
 @keyframes colorchange
 
