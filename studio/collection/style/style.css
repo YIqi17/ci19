@@ -1,0 +1,26 @@
+h1{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 100px;
+    position: relative;
+    top: 17000px;
+    height:8vh;
+
+}
+body{
+    background-image: url("background1.jpg");
+    background-size: cover;
+
+}
+img{
+    position: absolute;
+}
+#neon1{
+    top:-50px;
+    left:500px;
+    width: auto;
+    height:600px;
+    animation: blinker 3s step-end infinite; 
+}
+@keyframes blinker {  
+    50% { opacity: 0; }
+  }
