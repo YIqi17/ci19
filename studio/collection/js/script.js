@@ -1,3 +1,19 @@
+// $(function() {
+//     var controller = new ScrollMagic.Controller();
+//     var wipeAnimation = new TimelineMax()
+//     .fromTo("section.panel.first",1,{x:"-100%"},{x:"0", ease: Linear.easeNone})
+//     .fromTo("section.panel.second",1,{x:"100%"},{x:"0", ease: Linear.easeNone})
+//     .fromTo("section.panel.third",1,{y:"-100%"},{y:"0", ease: Linear.easeNone});
+//     new ScrollMagic.Scene({
+//         tiggerElement:"#pinContainer",
+//         tiggerHook:"onLeave",
+//         duration:"300%"
+//     })
+//     .setPin("#pinContainer")
+//     .setTween(wipeAnimation)
+//     .addIndicators()
+//     .addTo(controller);
+// });
 
 
 var url = "https://raw.githubusercontent.com/YIqi17/ci19/master/studio/collection/newcollectiondata.json";
@@ -38,7 +54,9 @@ function playaudio(audioElement1,name){
     }
 }
 // document.getElementsByClassName("name1").playaudio();
+function stopaudio(){
 
+}
 function displayimage(json) {
     var image = document.createElement("img");
     var audioElement1 = document.createElement('audio');
@@ -58,6 +76,7 @@ function displayimage(json) {
             document.getElementById("text1").style.opacity = 1;
             image.style.display = "block";
             image.classList.add("image1");
+            
             playaudio(audioElement1,'minguo.wav');
         }
         names.onmouseleave = function (event) {
@@ -168,3 +187,4 @@ document.getElementById("time1").onmouseover = function(event){
 
 // img.setAttribute("src", json[i].url);
 // 從某種意義上來説，每個人的人生都是一樣的。一樣的開頭，一樣的結局。人們津津樂道的也不過是這兩件事情的延申。我一直不甚瞭解，中國人爲什麽這麽着急，急著往前走，往不知道的地方狂奔。終點不過都是死亡，而我們在做的事情不過是再用現在可以感受到的確確實實的痛苦去賭一個沒有保障的未來。
+
