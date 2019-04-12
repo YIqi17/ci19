@@ -1,22 +1,6 @@
-// $(function() {
-//     var controller = new ScrollMagic.Controller();
-//     var wipeAnimation = new TimelineMax()
-//     .fromTo("section.panel.first",1,{x:"-100%"},{x:"0", ease: Linear.easeNone})
-//     .fromTo("section.panel.second",1,{x:"100%"},{x:"0", ease: Linear.easeNone})
-//     .fromTo("section.panel.third",1,{y:"-100%"},{y:"0", ease: Linear.easeNone});
-//     new ScrollMagic.Scene({
-//         tiggerElement:"#pinContainer",
-//         tiggerHook:"onLeave",
-//         duration:"300%"
-//     })
-//     .setPin("#pinContainer")
-//     .setTween(wipeAnimation)
-//     .addIndicators()
-//     .addTo(controller);
-// });
 
 
-var url = "https://raw.githubusercontent.com/YIqi17/ci19/master/studio/collection/data.json";
+var url = "https://raw.githubusercontent.com/YIqi17/ci19/master/studio/collection/newcollectiondata.json";
 fetch(url)
     .then(function (data) { return data.json(); })
     .then(function (json) { displayimage(json); })
@@ -44,17 +28,20 @@ function showEverything() {
     }
 }
 
-function playaudio(){
-var audioElement1 = document.createElement('audio');
-audioElement1.setAttribute('src','assets/minguo.wav');
-audioElement1.setAttribute('autoplay','autoplay');
+function playaudio(audioElement1,name){
+    var a=audioElement1.currentSrc;
+    var arr = a.split('/');
+    var song = arr[arr.length-1];
+    if(song!=name){
+        audioElement1.setAttribute('src','assets/'+name);
+        audioElement1.setAttribute('autoplay','autoplay');
+    }
 }
 // document.getElementsByClassName("name1").playaudio();
-function stopaudio(){
 
-}
 function displayimage(json) {
     var image = document.createElement("img");
+    var audioElement1 = document.createElement('audio');
     for (var i = 0; i < 20; i += 1) {
         var names = document.createElement("span");
         names.classList.add("name1");
@@ -71,13 +58,11 @@ function displayimage(json) {
             document.getElementById("text1").style.opacity = 1;
             image.style.display = "block";
             image.classList.add("image1");
+            playaudio(audioElement1,'minguo.wav');
         }
         names.onmouseleave = function (event) {
             showEverything();
             image.style.display = "none";
-        }
-        document.getElementById("time1").onmouseover= function(event){
-            playaudio();
         }
     }
 document.getElementById("time1").onmouseover = function(event){
@@ -100,6 +85,7 @@ document.getElementById("time1").onmouseover = function(event){
             event.target.style.opacity = 1;
             document.getElementById("text2").style.opacity = 1;
             image.style.display = "block";
+            playaudio(audioElement1,'war.mp4');
         }
         names.onmouseleave = function (event) {
             showEverything();
@@ -122,6 +108,7 @@ document.getElementById("time1").onmouseover = function(event){
             event.target.style.opacity = 1;
             document.getElementById("text3").style.opacity = 1;
             image.style.display = "block";
+            playaudio(audioElement1,'communist.mp4');
         }
         names.onmouseleave = function (event) {
             showEverything();
@@ -147,6 +134,7 @@ document.getElementById("time1").onmouseover = function(event){
             event.target.style.opacity = 1;
             document.getElementById("text4").style.opacity = 1;
             image.style.display = "block";
+            playaudio(audioElement1,'hongge.wav');
         }
         names.onmouseleave = function (event) {
             showEverything();
@@ -169,6 +157,7 @@ document.getElementById("time1").onmouseover = function(event){
             document.getElementById("text5").style.opacity = 1;
             event.target.style.opacity = 1;
             image.style.display = "block";
+            playaudio(audioElement1,'macao.mp4');
         }
         names.onmouseleave = function (event) {
             showEverything();
@@ -179,4 +168,3 @@ document.getElementById("time1").onmouseover = function(event){
 
 // img.setAttribute("src", json[i].url);
 // 從某種意義上來説，每個人的人生都是一樣的。一樣的開頭，一樣的結局。人們津津樂道的也不過是這兩件事情的延申。我一直不甚瞭解，中國人爲什麽這麽着急，急著往前走，往不知道的地方狂奔。終點不過都是死亡，而我們在做的事情不過是再用現在可以感受到的確確實實的痛苦去賭一個沒有保障的未來。
-

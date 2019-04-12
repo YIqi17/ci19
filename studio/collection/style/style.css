@@ -20,6 +20,10 @@ h1{
     font-weight: 300;
     margin: 0;
 }
+h2{
+    color:rgb(155, 155, 155);
+    font-size:8pt;
+}
 span{
     font-size: 13pt;
     color: white;
