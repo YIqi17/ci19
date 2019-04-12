@@ -12,54 +12,204 @@
 
 body{
     background-color: black;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+h1{
+    font-size: 13pt;
+    font-weight: 300;
+    margin: 0;
 }
 span{
-    font-family: 'Roboto', sans-serif;
-    font-size: 10pt;
+    font-size: 13pt;
     color: white;
+}
+.time{
+    font-size: 13pt;
+    color: white;
+    position:absolute;
+    top:80px;
+}
+#time1{
+    left:80px;
+}
+#time2{
+    left:350px;
+}
+#time3{
+    left:620px;
+}
+#time4{
+    left:930px;
+}
+#time5{
+    left:1240px;
+}
+.name1{
+top:60px;
+position: relative;
+}
+.name2{
+ top:60px;
+ position: relative;
+}
+.name3{
+ top:60px;
+ position: relative;
+}
+.name4{
+top:60px;
+position: relative;
+}
+.name4:hover{
+   color: rgb(167, 0, 0);
+   text-shadow: 5px;
+}
+.name3:hover{
+    color: rgb(179, 0, 0);
+ }
+.name5{
+top:60px;
+position: relative;
 }
 img{
     z-index: -1;
     position: absolute;
-    height: 1000px;
-    top: -30%;
+    top: 10%;
+    left:20%;
     margin-top: 0px;
     margin-left: -200px;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+#displayimage{
+    max-width: 500px;
+    max-height: 500px;
+}
+.name1:nth-child(3):hover{
+    color:greenyellow;
+}
+.name1:nth-child(5):hover{
+    color:rgb(125, 25, 255);
+}
+.name1:nth-child(7):hover{
+    color:rgb(255, 217, 0);
+}
+.name1:nth-child(9):hover{
+    color:rgb(236, 72, 43);
+}
+.name1:nth-child(11):hover{
+    color:rgb(255, 115, 0);
+}
+.name1:nth-child(13):hover{
+    color:rgb(216, 58, 255);
+}
+.name1:nth-child(15):hover{
+    color:rgb(255, 34, 34);
+}
+.name1:nth-child(17):hover{
+    color:rgb(255, 0, 212);
+}
+.name1:nth-child(19):hover{
+    color:rgb(229, 255, 0);
+}
+.name1:nth-child(21):hover{
+    color: rgb(228, 54, 54);
+}
+.name1:nth-child(23):hover{
+    color: rgb(0, 217, 255);
+}
+.name1:nth-child(25):hover{
+    color: rgb(0, 4, 255);
+}
+.name1:nth-child(27):hover{
+    color: rgb(0, 255, 13);
+}
+.name1:nth-child(29):hover{
+    color: rgb(0, 255, 242);
+}
+.name1:nth-child(31):hover{
+    color: rgb(0, 255, 76);
+}
+.name1:nth-child(33):hover{
+    color: rgb(255, 244, 94);
+}
+.name1:nth-child(35):hover{
+    color: rgb(0, 119, 255);
+}
+.name1:nth-child(37):hover{
+    color: rgb(255, 203, 59);
+}
+.name1:nth-child(39):hover{
+    color: rgb(180, 255, 59);
+}
+.name1:nth-child(41):hover{
+    color: rgb(0, 162, 255);
 }
 
-#pinContainer{
-        width:100%;
-        height:100%;
-        overflow:hiddetn;
-        
-    }
-.panel{
-      width:100%;
-      height:100%;
-      position:absolute;
-    }
-.first{
-    background-color: blueviolet
+.name5:nth-child(3):hover{
+    color: rgb(0, 255, 42);
 }
-.zero{
-    background-color: rgb(124, 76, 170)
+.name5:nth-child(5):hover{
+    color: rgb(0, 98, 255);
 }
-.second{
-    background-color: rgb(46, 2, 87)
+.name5:nth-child(7):hover{
+    color: rgb(255, 174, 0);
 }
-.third{
-background-color: rgb(127, 0, 247)
+.name5:nth-child(9):hover{
+    color: rgb(17, 160, 25);
 }
-img{
-    position: absolute;
+.name5:nth-child(11):hover{
+    color: rgb(4, 0, 255);
 }
-#neon1{
-    top:-50px;
-    left:500px;
-    width: auto;
-    height:600px;
-    animation: blinker 3s step-end infinite; 
+.name5:nth-child(13):hover{
+    color: rgb(247, 0, 255);
+}
+.name5:nth-child(15):hover{
+    color: rgb(251, 255, 0);
+}
+.name5:nth-child(17):hover{
+    color: rgb(255, 157, 0);
+}
+.name5:nth-child(19):hover{
+    color: rgb(76, 44, 255);
+}
+.name5:nth-child(21):hover{
+    color: rgb(244, 125, 255);
+}
+.name5:nth-child(23):hover{
+    color: rgb(0, 162, 255);
+}
+.name5:nth-child(25):hover{
+    color: rgb(0, 238, 255);
+}
+.name5:nth-child(27):hover{
+    color: rgb(251, 255, 0);
+}
+.name5:nth-child(29):hover{
+    color: rgb(255, 94, 234);
+}
+.name5:nth-child(31):hover{
+    color: rgb(0, 255, 136);
+}
+.name5:nth-child(33):hover{
+    color: rgb(255, 0, 0);
+}
+.name5:nth-child(35):hover{
+    color: rgb(3, 0, 160);
+}
+.name5:nth-child(37):hover{
+    color: rgb(255, 0, 0);
+}
+.name5:nth-child(39):hover{
+    color: rgb(251, 255, 0);
+}
+.name5:nth-child(41):hover{
+    color: rgb(255, 86, 218);
+}
+/* #displayimage{
+    animation: blinker 6s ; 
 }
 @keyframes blinker {  
     50% { opacity: 0; }
-  }
+  } */
