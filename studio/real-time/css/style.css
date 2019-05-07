@@ -1,0 +1,124 @@
+body {
+    
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(252,249,206);
+	font-family: sans serif;
+	font-size: 10pt
+
+}
+.kaleidoscope {
+    
+	width: 130%;
+	height: 110%;
+    
+}
+.kaleidoscope .tile {
+    
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: -10%;
+	z-index: 0;
+	overflow: hidden;
+	height: 120%;
+	width: 60%;
+	transform-origin: right top;
+
+	}
+.kaleidoscope .tile .image {
+    
+	position: relative;
+	top: 0;    
+	left: 100%;
+	height: 100%;
+	width: 100%;
+	/*background-image: url(../img/comp.jpg);*/
+	transform-origin: left top
+
+	}
+.kaleidoscope.n0 .tile {
+	display: block
+	}
+.kaleidoscope.n0 .tile .image {
+	transform: rotate(Infinitydeg)
+	}
+.kaleidoscope.n6 .tile {
+    display: block;
+}
+.kaleidoscope.n6 .tile.t0 {
+    transform: rotate(0deg);
+}
+.kaleidoscope.n6 .tile.t1 {
+    transform: scale(-1,  1) rotate(0deg);
+}
+.kaleidoscope.n6 .tile.t2 {
+    transform: rotate(60deg);
+}
+.kaleidoscope.n6 .tile.t3 {
+    transform: scale(-1,  1) rotate(60deg);
+}
+.kaleidoscope.n6 .tile.t4 {
+    transform: rotate(120deg);
+}
+.kaleidoscope.n6 .tile.t5 {
+    transform: scale(-1,  1) rotate(120deg);
+}
+.kaleidoscope.n6 .tile.t6 {
+    transform: rotate(180deg);
+}
+.kaleidoscope.n6 .tile.t7 {
+    transform: scale(-1,  1) rotate(180deg);
+}
+.kaleidoscope.n6 .tile.t8 {
+    transform: rotate(240deg);
+}
+.kaleidoscope.n6 .tile.t9 {
+    transform: scale(-1,  1) rotate(240deg);
+}
+.kaleidoscope.n6 .tile.t10 {
+    transform: rotate(300deg);
+}
+.kaleidoscope.n6 .tile.t11 {
+    transform: scale(-1,  1) rotate(300deg);
+}
+.kaleidoscope.n6 .tile .image {
+    transform: rotate(30deg);
+}
+
+
+
+#tabs {
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	text-align: center;
+	z-index: 1000;
+	background-color:rgb(0,174,239);
+	font-family: 'IBM Plex Mono', monospace;
+	opacity: 0.4;
+	margin:0;
+
+}
+#tabs ul{
+	margin:0;
+	padding:5px;
+}
+#tabs ul li {
+	display: inline-block;
+	color: rgb(252,249,206);
+}
+#tabs li{
+	padding-right:3%;
+	padding-left:3%;
+	cursor: pointer;
+}
+li:active{
+	background-color:rgb(39,70,255)
+}
+#tabs:hover { 
+  opacity: 0.9;
+}
+
+
