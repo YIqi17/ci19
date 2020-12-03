@@ -8,7 +8,7 @@ var precipProbability;
 //have functions to check future 7 day's probability;
 //the speed of the image movement is determined by the time, for daily is faster
 //get weather and precipitationprobability
-  const key = "969346bb8636b08a6f37532df9c3499d";
+  const key = "379de9507cfdca38207d7ded1b07bac6";
     getWeather({
       coords: {
           latitude: 40.730610, 
