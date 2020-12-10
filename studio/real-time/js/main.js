@@ -11,8 +11,8 @@ var precipProbability;
   const key = "379de9507cfdca38207d7ded1b07bac6";
     getWeather({
       coords: {
-          latitude: 40.730610, 
-          longitude: -73.935242
+          latitude: 37.8267, 
+          longitude: -122.4233
         }
     });
 
