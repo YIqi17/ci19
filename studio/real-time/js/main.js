@@ -30,7 +30,7 @@ var precipProbability;
   var handling = "Daily";
   function handleJSON(json){
     // list of backgrounds and the maximum value at which it will be shown (always takes smallest match)
-    let backgrounds = ['comp3.jpg', 'comp6.jpg', 'comp7.jpg', 'comp8.jpg'];
+    let backgrounds = ['comp3.jpg', 'comp6.jpg', 'try1.jpg', 'comp8.jpg'];
     let limits      = [   0.05,          0.45,        0.8,         1.0];
 
     data = json;
