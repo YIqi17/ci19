@@ -19,7 +19,7 @@ var precipProbability;
   function getWeather(position){
       var lat = position.coords.latitude;
       var lon = position.coords.longitude;
-      var url = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/"+key+"/"+lat+","+lon;
+      var url = "https://cors-anywhere-yiqi-worker.herokuapp.com/https://api.darksky.net/forecast/"+key+"/"+lat+","+lon;
       console.log(url);
       fetch(url)
         .then(res => res.json())
